@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muebles Aurora | Panel de pruebas</title>
+<style>
+:root {color-scheme:dark;--bg:#071927;--surface:#10283c;--line:#244657;--accent:#5eead4;--indigo:#b8a6ff;--muted:#bed2dc}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 85% 5%,#254052 0%,var(--bg) 55%);color:#f0fcff}main{max-width:1100px;margin:auto;padding:40px 24px}header{border-bottom:1px solid var(--line);padding-bottom:25px;display:flex;justify-content:space-between;gap:20px;align-items:center}a{color:var(--accent)}.brand{font-size:15px;letter-spacing:4px;font-weight:800;color:var(--accent)}h1{font-size:clamp(32px,5vw,58px);margin:18px 0 6px}p{color:var(--muted);line-height:1.6}.lead{max-width:700px}.panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:32px 0}.tile{background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:25px}.tile strong{font-size:40px;display:block}.tile span{color:var(--muted);font-size:14px}.tile:first-child strong{color:var(--accent)}.tile:nth-child(2) strong{color:var(--indigo)}section{background:var(--surface);border-radius:18px;border:1px solid var(--line);padding:26px;margin:20px 0}h2{margin-top:0}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:13px 8px;border-bottom:1px solid var(--line)}th{color:var(--muted)}code{font-size:12px;color:#d9f4f6;overflow-wrap:anywhere}.track{height:9px;min-width:90px;background:#2d4a5d;border-radius:10px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--indigo),var(--accent))}.foot{margin:28px 0;color:var(--muted)}.tag{border:1px solid var(--accent);padding:9px 14px;border-radius:30px;color:var(--accent);white-space:nowrap}@media(max-width:700px){.panel{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start}table{font-size:12px}td,th{padding:11px 4px}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand">MUEBLES / AURORA</div><span class="tag">LPA2 - TALLER 1 / VERSION B</span></header>
+<h1>Pruebas que respaldan cada venta.</h1>
+<p class="lead">Panel visual de verificacion del sistema de muebles. Los datos fueron medidos ejecutando pytest con cobertura de lineas y ramas. Este informe es adicional al reporte oficial de coverage.py.</p>
+<div class="panel">
+<div class="tile"><span>COBERTURA GLOBAL</span><strong>86,29%</strong><span>Meta exigida: 80%</span></div>
+<div class="tile"><span>PRUEBAS APROBADAS</span><strong>114</strong><span>Sin errores en la ejecucion</span></div>
+<div class="tile"><span>RAMAS COMPROBADAS</span><strong>272</strong><span>Ramas evaluadas por coverage</span></div>
+</div>
+<section><h2>Mapa de cobertura por archivo</h2><p>Las filas se ordenan desde el archivo con menor cobertura para facilitar mejoras.</p><div style="overflow-x:auto"><table><thead><tr><th>Archivo</th><th>Progreso</th><th>Porcentaje</th><th>Lineas</th></tr></thead><tbody>
+<tr><td><code>src/models/categorias/almacenamiento.py</code></td><td><div class="track"><div class="fill" style="width:45.0%"></div></div></td><td>45.0%</td><td>18/36</td></tr>
+<tr><td><code>src/ui/menu.py</code></td><td><div class="track"><div class="fill" style="width:76.3%"></div></div></td><td>76.3%</td><td>196/245</td></tr>
+<tr><td><code>src/models/concretos/cama.py</code></td><td><div class="track"><div class="fill" style="width:82.1%"></div></div></td><td>82.1%</td><td>38/44</td></tr>
+<tr><td><code>src/services/tienda.py</code></td><td><div class="track"><div class="fill" style="width:83.0%"></div></div></td><td>83.0%</td><td>139/170</td></tr>
+<tr><td><code>src/models/composicion/comedor.py</code></td><td><div class="track"><div class="fill" style="width:87.1%"></div></div></td><td>87.1%</td><td>69/75</td></tr>
+<tr><td><code>src/models/categorias/asientos.py</code></td><td><div class="track"><div class="fill" style="width:92.1%"></div></div></td><td>92.1%</td><td>48/51</td></tr>
+<tr><td><code>src/main.py</code></td><td><div class="track"><div class="fill" style="width:92.2%"></div></div></td><td>92.2%</td><td>81/88</td></tr>
+<tr><td><code>src/models/concretos/sofacama.py</code></td><td><div class="track"><div class="fill" style="width:92.3%"></div></div></td><td>92.3%</td><td>59/62</td></tr>
+<tr><td><code>src/models/concretos/escritorio.py</code></td><td><div class="track"><div class="fill" style="width:93.8%"></div></div></td><td>93.8%</td><td>23/24</td></tr>
+<tr><td><code>src/models/categorias/superficies.py</code></td><td><div class="track"><div class="fill" style="width:96.2%"></div></div></td><td>96.2%</td><td>45/47</td></tr>
+<tr><td><code>src/models/concretos/mesa.py</code></td><td><div class="track"><div class="fill" style="width:96.2%"></div></div></td><td>96.2%</td><td>42/43</td></tr>
+<tr><td><code>src/models/mueble.py</code></td><td><div class="track"><div class="fill" style="width:96.5%"></div></div></td><td>96.5%</td><td>47/49</td></tr>
+<tr><td><code>src/models/concretos/comedor.py</code></td><td><div class="track"><div class="fill" style="width:96.6%"></div></div></td><td>96.6%</td><td>25/25</td></tr>
+<tr><td><code>src/models/concretos/sillon.py</code></td><td><div class="track"><div class="fill" style="width:97.0%"></div></div></td><td>97.0%</td><td>25/25</td></tr>
+<tr><td><code>src/models/concretos/sofa.py</code></td><td><div class="track"><div class="fill" style="width:97.7%"></div></div></td><td>97.7%</td><td>37/37</td></tr>
+<tr><td><code>src/models/concretos/armario.py</code></td><td><div class="track"><div class="fill" style="width:100.0%"></div></div></td><td>100.0%</td><td>18/18</td></tr>
+<tr><td><code>src/models/concretos/cajonera.py</code></td><td><div class="track"><div class="fill" style="width:100.0%"></div></div></td><td>100.0%</td><td>16/16</td></tr>
+<tr><td><code>src/models/concretos/silla.py</code></td><td><div class="track"><div class="fill" style="width:100.0%"></div></div></td><td>100.0%</td><td>44/44</td></tr>
+<tr><td><code>src/services/catalogo.py</code></td><td><div class="track"><div class="fill" style="width:100.0%"></div></div></td><td>100.0%</td><td>0/0</td></tr>
+</tbody></table></div></section>
+<section><h2>Como reproducir la evaluacion</h2><p>Desde una terminal ubicada en la carpeta del proyecto:</p><pre><code>python -m pip install -r requirements.txt
+python -m pytest --cov=src --cov-branch --cov-report=html</code></pre><p>Consulta el <a href="htmlcov/index.html">reporte oficial con detalle de lineas</a> o vuelve al README para ver las instrucciones de VS Code.</p></section>
+<p class="foot">Panel original de presentacion. Las pruebas y el reporte oficial se generan con pytest y pytest-cov.</p>
+</main></body></html>

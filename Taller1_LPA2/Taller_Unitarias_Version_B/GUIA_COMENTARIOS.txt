@@ -1,0 +1,15 @@
+GUIA DE CODIGO - VERSION B
+
+Cada instruccion de los archivos Python esta precedida por un comentario explicativo cuando esto es seguro.
+Los textos dentro de docstrings y cadenas multilinea se conservan para no modificar la aplicacion.
+Los comentarios nuevos no usan tildes.
+
+Orden de lectura sugerido:
+1. src/models/mueble.py: contrato abstracto.
+2. src/models/concretos/: tipos de productos.
+3. src/models/composicion/comedor.py: relacion entre objetos.
+4. src/services/tienda.py: inventario, descuentos y ventas.
+5. tests/conftest.py: fixtures compartidos.
+6. tests/unit/: casos de prueba individuales.
+7. tests/integration/: recorrido entre modulos.
+8. htmlcov/index.html: cobertura medida.
